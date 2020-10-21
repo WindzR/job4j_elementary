@@ -1,20 +1,20 @@
 package ru.job4j.condition;
 
 public class LogicNot {
-    public boolean isEven(int num) {
+    public static boolean isEven(int num) {
         return num % 2 == 0;
     }
 
-    public boolean isPositive(int num) {
+    public static boolean isPositive(int num) {
         return num > 0;
     }
 
     public static boolean notEven(int num) {
-        return !(num % 2 == 0);
+        return !isEven(num);
     }
 
     public static boolean notPositive(int num) {
-        return !(num > 0);
+        return !isPositive(num);
     }
 
     public static boolean notEvenAndPositive(int num) {
