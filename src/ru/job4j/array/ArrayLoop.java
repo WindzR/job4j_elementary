@@ -5,7 +5,11 @@ public class ArrayLoop {
         int[] nums = new int[5];
         for (int i = 0; i < nums.length; i++) {
             nums[i] = i * 2 + 3;
-            System.out.println(nums[i]);
+            System.out.print(" " + nums[i]);
+        }
+        System.out.println(" ");
+        for (int i : nums) {
+            System.out.print(" " + i);
         }
     }
 }
