@@ -16,11 +16,11 @@ public class FindLoop {
 
     public static int indexOf(int[] data, int el, int start, int finish) {
         int rst = -1;
-        int[] temp = new int[finish - start + 1];
         for (int i = start; i <= finish; i++) {
-            temp[i - start] = data[i];
-            if (temp[i - start] == el) {
+            data[i - start] = data[i];
+            if (data[i - start] == el) {
                 rst = i;
+                break;
             }
         }
         return rst;
