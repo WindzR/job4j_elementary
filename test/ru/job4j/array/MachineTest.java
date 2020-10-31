@@ -22,4 +22,12 @@ public class MachineTest {
         assertThat(rsl, is(expected));
     }
 
+    @Test
+    public void when100by66() {
+        Machine machine = new Machine();
+        int[] expected = {10, 10, 10, 5, 2};
+        int[] rsl = machine.change(100, 63);
+        assertThat(rsl, is(expected));
+    }
+
 }
