@@ -2,33 +2,33 @@ package ru.job4j.array;
 
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
-        boolean result = true;
+        boolean isWin = true;
         for (int cell = 0; cell < board[row].length; cell++) {
             if (board[row][cell] != 'X') {
-                result = false;
+                isWin = false;
                 break;
             }
         }
-        return result;
+        return isWin;
     }
 
     public static boolean monoVertical(char[][] board, int column) {
-        boolean result = true;
+        boolean isWin = true;
         for (int row = 0; row < board.length; row++) {
             if (board[row][column] != 'X') {
-                result = false;
+                isWin = false;
                 break;
             }
         }
-        return result;
+        return isWin;
     }
 
     public static char[] extractDiagonal(char[][] board) {
-        char[] rsl = new char[board.length];
+        char[] diagonal = new char[board.length];
         for (int i = 0; i < board.length; i++) {
-            rsl[i] = board[i][i];
+            diagonal[i] = board[i][i];
         }
-        return rsl;
+        return diagonal;
     }
 
     public static boolean isWin(char[][] board) {
