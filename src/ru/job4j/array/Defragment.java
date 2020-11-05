@@ -2,21 +2,18 @@ package ru.job4j.array;
 
 public class Defragment {
     public static String[] compress(String[] array) {
-        //удаление null'ов со смещением элементов всего массива
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                for (int i = index; i < array.length - 1; i++) {
-                    array[i] = array[i + 1];
+                int nullIndex = index;
+                for (int i = index; i < array.length; i++) {
+                    if (array[i] != null) {
+                        array[nullIndex] = array[i];
+                        array[i] = null;
+                        break;
+                    }
                 }
-                array[array.length - 1] = null;
             }
-            //если после всех итераций 1й элемент остался null, удаляем его
-            if (array[0] == null) {
-                for (int i = 0; i < array.length - 1; i++) {
-                    array[i] = array[i + 1];
-                }
-                array[array.length - 1] = null;
-            }
+            System.out.print(array[index] + " ");
         }
         return array;
     }
