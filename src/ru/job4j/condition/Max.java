@@ -12,8 +12,7 @@ public class Max {
     }
 
     public static int max(int first, int second, int third, int forth) {
-        boolean temp = max(first, second) > max(third, forth);
-        return temp ? max(first, second) : max(third, forth);
+        return max(first, max(second, max(third, forth)));
     }
 
     public static void main(String[] args) {
