@@ -3,16 +3,16 @@ package ru.job4j.pojo;
 import java.util.Date;
 
 public class Student {
-    private String FNM;
+    private String familyNameMidname;
     private String group;
     private Date dateOfReciept;
 
     public String getFNM() {
-        return FNM;
+        return familyNameMidname;
     }
 
-    public void setFNM(String FNM) {
-        this.FNM = FNM;
+    public void setFNM(String familyNameMidname) {
+        this.familyNameMidname = familyNameMidname;
     }
 
     public String getGroup() {
