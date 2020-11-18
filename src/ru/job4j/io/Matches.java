@@ -30,6 +30,13 @@ public class Matches {
                     flag = false;
                 }
                 int select = Integer.parseInt(input.nextLine());
+                restart:
+                if ((select < 1) || (select > 3)) {
+                    System.out.println("Можно убирать только от 1 до 3 спичек!");
+                    System.out.println("Повторите ход!");
+                    select = Integer.parseInt(input.nextLine());
+                    break restart;
+                }
                 matches = matches - select;
                 System.out.println("На столе осталось " + matches + " спичек(чка)! ");
             }
