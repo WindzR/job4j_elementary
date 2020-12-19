@@ -9,27 +9,16 @@ public class PhoneDictionary {
         this.persons.add(person);
     }
 
-    /**
-     * Вернуть список всех пользователей, который содержат key в любых полях.
-     * @param key Ключ поиска.
-     * @return Список подощедщих пользователей.
-     */
     public ArrayList<Person> find(String key) {
         ArrayList<Person> result = new ArrayList<Person>();
-        for (Person value : persons) {
-            if (persons.contains(key)) {
-                result.add(value);
+        for (int index = 0; index < persons.size(); index++) {
+            if (persons.get(index).getName().contains(key)
+                    || persons.get(index).getSurname().contains(key)
+                    || persons.get(index).getPhone().contains(key)
+                    || persons.get(index).getAddress().contains(key)) {
+                result.add(persons.get(index));
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        PhoneDictionary test = new PhoneDictionary();
-        test.add(new Person("Dima", "Bodin", "123456", "Smol"));
-        ArrayList<Person> persons = test.find("123456");
-        for (Person value : persons) {
-            System.out.println(value);
-        }
     }
 }
