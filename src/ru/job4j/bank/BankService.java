@@ -12,10 +12,12 @@ public class BankService {
 
     public void addAccount(String passport, Account account) {
         User user = findByPassport(passport);
+        if (user == null) {
+            return;
+        }
         List<Account> listAccounts = users.get(user);
         if (!listAccounts.contains(account)) {
             listAccounts.add(account);
-            users.put(user, listAccounts);
         } else {
             System.out.println("This account is already exist!");
         }
