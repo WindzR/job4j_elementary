@@ -5,12 +5,12 @@ public class Doctor extends Profession {
     private boolean residency;
     private int experience;
 
-    public String getSpecialty(String specialty) {
+    /*public String getSpecialty(String specialty) {
     }
 
     public boolean getResidency(boolean residency) {
     }
 
     public int getExperience(int experience) {
-    }
+    }*/
 }

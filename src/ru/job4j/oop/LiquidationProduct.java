@@ -1,7 +1,7 @@
 package ru.job4j.oop;
 
 public final class LiquidationProduct {
-    private Product product;
+   /* private Product product;
 
     public LiquidationProduct(String name, int price) {
         product = new Product(name, price);
@@ -9,5 +9,5 @@ public final class LiquidationProduct {
 
     public String label() {
         return product.label();
-    }
+    }*/
 }

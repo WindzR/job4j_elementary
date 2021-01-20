@@ -6,7 +6,7 @@ public class Dentist extends Doctor {
     private String hospital;
     private double income;
 
-    public String getSpecialization(String specialization) {
+    /*public String getSpecialization(String specialization) {
     }
 
     public String getRegion(String region) {
@@ -16,5 +16,5 @@ public class Dentist extends Doctor {
     }
 
     public double getIncome(int income) {
-    }
+    }*/
 }

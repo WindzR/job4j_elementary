@@ -5,12 +5,12 @@ public class Engineer extends Profession {
     private boolean mastersDegree;
     private int experience;
 
-    public String getSpecialty(String specialty) {
+    /*public String getSpecialty(String specialty) {
     }
 
     public boolean getMastersDegree(boolean mastersDegree) {
     }
 
     public int getExperience(int experience) {
-    }
+    }*/
 }

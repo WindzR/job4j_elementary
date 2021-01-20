@@ -6,7 +6,7 @@ public class Builder extends Engineer {
     private String[] foreignLanguages;
     private double income;
 
-    public String[] getBuildingSpecialization(String[] buildingSpecialization) {
+    /*public String[] getBuildingSpecialization(String[] buildingSpecialization) {
     }
 
     public String[] getFinishedProjects(String[] finishedProjects) {
@@ -16,5 +16,5 @@ public class Builder extends Engineer {
     }
 
     public double getIncome(double income) {
-    }
+    }*/
 }

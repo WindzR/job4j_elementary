@@ -6,7 +6,7 @@ public class Programmer extends Engineer {
     private String[] foreignLanguages;
     private double income;
 
-    public String[] getComputerLanguages(String[] computerLanguages) {
+    /*public String[] getComputerLanguages(String[] computerLanguages) {
     }
 
     public String[] getFrameworks(String[] frameworks) {
@@ -16,5 +16,5 @@ public class Programmer extends Engineer {
     }
 
     public double getIncome(double income) {
-    }
+    }*/
 }

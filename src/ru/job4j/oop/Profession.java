@@ -8,7 +8,7 @@ public class Profession {
     private String education;
     private LocalDate birthday;
 
-    public String getName(String name) {
+    /*public String getName(String name) {
     }
 
     public String getSurName(String surname) {
@@ -18,5 +18,5 @@ public class Profession {
     }
 
     public LocalDate getBirthday(LocalDate birthday) {
-    }
+    }*/
 }
