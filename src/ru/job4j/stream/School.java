@@ -15,10 +15,10 @@ public class School {
 
     public Map<String, Student> mapOfStudent(List<Student> students) {
         return students.stream()
-                .distinct()
                 .collect(Collectors.toMap(
                         Student :: getSurname,
-                        value -> value
+                        value -> value,
+                        (a, b) -> a
                 ));
     }
 }
