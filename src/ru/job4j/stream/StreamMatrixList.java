@@ -1,11 +1,9 @@
 package ru.job4j.stream;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StreamMatrixList {
 
@@ -23,12 +21,9 @@ public class StreamMatrixList {
         return matrix;
     }
 
-    public static void main(String[] args) {
-        StreamMatrixList test = new StreamMatrixList();
-        Integer[][]matrix = test.generateMatrix(5);
-        List<Integer> integers = Arrays.stream(matrix)
+    public List<Integer> arrayToList(Integer[][] matrix) {
+        return Arrays.stream(matrix)
                 .flatMap(Arrays :: stream)
                 .collect(Collectors.toList());
-        System.out.println(integers);
     }
 }
